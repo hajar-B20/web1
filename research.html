@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>recherche</title>
+</head>
+<body>
+    <h1 ><center>Recherche des formations</center></h1>
+    <p><a  href="index.html"><h3>Acceuil </h3></a></p>
+    <p><a  href="signup.html"><h3>S'inscrire </h3></a></p>
+    <p><a  href="login.html"><h3>Connexion</h3></a></p>
+    <p><a  href="research.html"><h3>Recherche</h3></a></p>
+    <p><a  href="formations.html"><h3>Formations et cours</h3></a></p><br><br>
+    
+    
+        <table>
+            <tr>
+                <td><label for="formations">Formations : </label></td>
+                <td>
+                    <select name="formation" id="formation">
+                        <option value="" disabled selected>Catégories</option>
+                        <option value="IT">IT et informatique</option>
+                        <option value="business">Business</option>
+                        <option value="devPersonnel">Développement personnel</option>
+                        <option value="langue">Langues</option>
+                        <option value="e-commerce">E-commerce</option>
+                        <option value="design">Design</option>
+                        <option value="photoshop">Photoshop et Montage video</option>
+                    </select>
+                </td>
+            </tr>
+    
+            <tr>
+                <td><label for="levels">Niveau : </label></td>
+                <td>
+                    <select name="Niveau" id="Niveau">
+                        <option value="" disabled selected>selectionner</option>
+                        <option value="1">Débutant</option>
+                        <option value="2">Intermediaire</option>
+                        <option value="3">Difficil</option>
+                    </select>
+                </td>
+            </tr>
+       
+            <tr>
+                <td><label for="Language">Langue : </label></td>
+                <td>
+                    <select name="Langue" id="Langue">
+                        <option value="" disabled selected>selectionner</option>
+                        <option value="1">Anglais</option>
+                        <option value="2">Français</option>
+                        <option value="3">Arabe</option>
+                    </select>
+                </td>
+            </tr>
+        </table><br><br>
+        <button>
+            <b>Filtrer</b>
+        </button>
+</body>
+</html>
