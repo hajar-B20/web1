@@ -1,77 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stlsignup.css">
+        <link rel="stylesheet" href="stlindex.css">
         <meta charset="UTF-8">
+
         <title>S'inscrire</title>
     </head>
     <body>
-        <h1>Bienvenue dans notre plate-forme <strong>EduFabor</strong>
-
-        </h1>
-        <p><a  href="index.html"><h3>Acceuil </h3></a></p>
-        <p><a  href="signup.html"><h3>S'inscrire </h3></a></p>
-        <p><a  href="login.html"><h3>Connexion</h3></a></p>
-        <p><a  href="research.html"><h3>Recherche</h3></a></p>
-        <p><a  href="formations.html"><h3>Formations et cours</h3></a></p><br>
-        
-
-        <fieldset>
-            <legend><h1>S'inscrire</h1></legend>
-            <table>
-                <tr>
-                    <td><label for="nom">Nom :</label></td>
-                    <td><input type="text" name="nom" id="nom" placeholder="Votre nom" size="20" /></td>
-                </tr>
-                <tr>
-                    <td><label for="prénom">Prénom :</label></td>
-                    <td><input type="text" name="prénom" id="prénom" placeholder="Votre prénom" size="20" /></td>
-                </tr>
-                <tr>
-                    <td><label for="date">Date de naissance :</label></td>
-                    <td><input type="date" name="date" id="date" /></td>
-                </tr>
-                <tr>
-                    <td><label for="email">Email :</label></td>
-                    <td><input type="email" name="email" id="email" placeholder="Votre email" /></td>
-                </tr>
+        <nav>
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html">EduFabor</a>
+                </div>
                
-                <tr>
-                    <td><label for="pays">Votre pays :</label></td>
-                    <td>
-                        <select name="pays" id="pays">
-                            <option value="" disabled selected>Votre pays</option>
-                            <option value="Maroc">Maroc</option>
-                            <option value="Tunisia">Tunisie</option>
-                            <option value="Algérie">Algérie</option>
-                            <option value="Arabie Soaudite">Arabie Soaudite</option>
-                            <option value="Egypt">Egypt</option>
-                            <option value="Emirats">Emirats</option>
-                            <option value="Irak">Irak</option>
-                            <option value="Jordanie">Jordanie</option>
-                            <option value="Koweit">Koweit</option>
-                            <option value="Liban">Liban</option>
-                            <option value="Qatar">Qatar</option>
-                            <option value="Liban">Liban</option>
-                            <option value="Mauritanie">Mauritanie</option>
-                            <option value="Soudan">Soudan</option>
-
-
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="Mot de passe">Mot de passe :</label></td>
-                     <td><input type="mp" name="mp" id="mp" /></td>
-                 </tr>
-                 <tr>
-                    <td><label for="confirmer le mot de passe">Confirmer le mot de passe :</label></td>
-                     <td><input type="cmp" name="cmp" id="cmp" /></td>
-                 </tr>
-            </table>
-        </fieldset>
-        <button>
-            <b>s'inscrire</b>
-        </button>
-        <p><a  href="login.html">Déjà inscrit ?</a></p>
+                    <ul>
+                        <li><a  href="index.html"><h3>Acceuil </h3></a></li>
+                        <li><a  href="signup.html"><h3>S'inscrire </h3></a></li>
+                        <li><a  href="login.html"><h3>Connexion</h3></a></li>
+                        <li><a  href="research.html"><h3>Recherche</h3></a></li>
+                        <li><a  href="formations.html"><h3>Formations et cours</h3></a></li>
+                        <li><a href="index.html#about"><h3>A propos de nous </h3></a></li><br>
+                    </ul> 
+                       
+            </div>  
+        </nav>
+        <div class="background"></div>
+        <div class="container">
+            <div class="item">
+                <div class="text-item">
+                    <h2>Bienvenue sur<br><span>
+                        notre site web !
+                    </span></h2>
+                    <p>EduFabor vous accompagne pour un apprentissage réussi.</p>
+            </div>
+            <div class="signup-section">
+                <div class="form-box signup">
+                    <form >
+                        <h2>Créer un compte</h2>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-user'></i></span>
+                            <input type="text" required>
+                            <label >Nom</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-user'></i></span>
+                            <input type="text" required>
+                            <label >Prénom</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-envelope'></i></span>
+                            <input type="email" required>
+                            <label >Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                            <input type="password" required>
+                            <label>Mot de passe</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                            <input type="password" required>
+                            <label>Confirmer le mot de passe</label>
+                        </div>
+                        <div class="conditions">
+                            <label for=""><input type="checkbox">J'accepte toutes les conditions</label>
+                        </div>
+                        <button class="btn"><b>S'inscrire</b></button>
+                        <div class="register-account">
+                            <p>Déjà inscrit ? <a href="login.html" class="login-link">Se connecter</a></p>
+                        </div>
+                    </form>
+                </div>
+      
+          <footer class="footer">
+            <p>Copyright © 2024 <a href="index.html">EduFabor.</a></p>
+          </footer>
+    </div>
+        
     </body>
 </html>

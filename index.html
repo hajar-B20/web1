@@ -2,26 +2,51 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stlindex.css">
+        <link rel="stylesheet" href="stlfooter.css">
         <title>Page d'acceuil</title>
     </head>
     <body>
-        <h1 ><center>Acceuil</center></h1>
-        <p><a  href="index.html"><h3>Acceuil </h3></a></p>
-        <p><a  href="signup.html"><h3>S'inscrire </h3></a></p>
-        <p><a  href="login.html"><h3>Connexion</h3></a></p>
-        <p><a  href="research.html"><h3>Recherche</h3></a></p>
-        <p><a  href="formations.html"><h3>Formations et cours</h3></a></p>
-        <p><a href="#aboutus"><h3>A propos de nous </h3></a></p><br>
+        
+        <nav>
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html">EduFabor</a>
+                </div>
+               
+                    <ul>
+                        <li><a  href="index.html"><h3>Acceuil </h3></a></li>
+                        <li><a  href="signup.html"><h3>S'inscrire </h3></a></li>
+                        <li><a  href="login.html"><h3>Connexion</h3></a></li>
+                        <li><a  href="research.html"><h3>Recherche</h3></a></li>
+                        <li><a  href="formations.html"><h3>Formations et cours</h3></a></li>
+                        <li><a href="#about"><h3>A propos de nous </h3></a></li><br>
+                    </ul> 
+                       
+            </div>  
+        </nav>
 
-        <center><img src="PH2.jpg">
-        <img src="PH6.jpg">
-        <img src="PH4.jpg" width="300"></center>
+        <div id="title" class="section title">
+            <h2 class="quote"><br><br>"Investir en soi-même est l’investissement le plus rentable que vous puissiez faire"<br>
+                <span class="author">Warren Buffett</span> </h2>
 
-        <div>
-            <h2  id="aboutus">About us</h2>
+        </div>
+
+
+        <div id="detail" class="section detail">
+            <h3>
+                <span class="welcome">Bienvenue sur notre<br> plate-forme éducative</span><br><br><br>
+                Explorez nos sections interactives, apprenez de grandes personnalités, et commencez votre voyage vers la réussite dès aujourd'hui.
+            </h3>
+
+            
+        </div>
+
+        <div id="about" class="section about">
 
             <ul>
-                <p>Notre site web éducatif est une plateforme complète dédiée à l'apprentissage accessible à tous.Conçu pour les étudiants, les enseignants, et les professionnels, il offre une variété de cours couvrant différents domaines, tels que :
+                <p><h1 class="=us">Que sommes-nous ?</h1><br><br>Notre site web éducatif est une plateforme complète dédiée à l'apprentissage accessible à tous. Conçu pour les étudiants, les enseignants, et les professionnels, il offre une variété de cours couvrant différents domaines, tels que :
                     <li>l'entreprenariat</li>
                     <li>IT et l'informatique</li>
                     <li>les langues</li>
@@ -32,16 +57,57 @@
 
                     Nos cours sont élaborés par des experts et s’adressent à tous les niveaux, du débutant à l’avancé. Nous proposons également des certifications pour valoriser les compétences acquises et aider les apprenants à progresser dans leur parcours académique ou professionnel. Notre mission est de démocratiser l'accès à une éducation de qualité en fournissant des ressources accessibles, stimulantes et adaptées aux besoins actuels du marché.</p>  
             </ul>
-        </div><br>
+        </div>
 
-        <h2>Créer un compte</h2>
-        <a href="signup.html">S'inscrire</a>
-        |
-        <a href="login.html">Connexion</a><br>
-
-        <footer>
-            <p>© 2024 EduFabor. Tous droits réservés.</p>
-        </footer>
-
+            <footer>
+                <div class="content">
+                  <div class="top">
+                    <div class="logo-details">
+                        <div class="logo-container">
+                            <img src="EF logo 4.svg" alt="logo" class="logo">
+                            <span class="logo_name">EduFabor</span>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="link-boxes">
+                    <ul class="box">
+                      <li class="link_name">EduFabor</li>
+                      <li><a href="index.html">Acceuil</a></li>
+                      <li><a href="#">Contactez nous</a></li>
+                      <li><a href="index.html#about">A propos de nous</a></li>
+                      <li><a href="formations.html">Commencer à apprendre</a></li>
+                    </ul>
+                    <ul class="box">
+                        <li class="link_name">Formations</li>
+                        <li><a href="formations.html">IT et informatique</a></li>
+                        <li><a href="formations.html">L'entreprenariat</a></li>
+                        <li><a href="formations.html">Langues</a></li>
+                        <li><a href="formations.html">E-commerce</a></li>
+                    </ul>
+                    <ul class="box">
+                      <li class="link_name">Compte</li>
+                      <li><a href="#">Profil</a></li>
+                      <li><a href="#">Mon compte</a></li>
+                      <li><a href="#">Préfrénces</a></li>
+                      <li><a href="#">Purchase</a></li>
+                    </ul>
+                   
+                    <ul class="box input-box">
+                      <li class="link_name">Créer un compte</li>
+                      <li><input type="text" placeholder="Enter your email"></li>
+                      <li><input type="button" value="S'inscrire"></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="bottom-details">
+                  <div class="bottom_text">
+                    <span class="copyright_text">Copyright © 2024 <a href="index.html">EduFabor </a>Tous les droits réservés</span>
+                    <span class="policy_terms">
+                      <a href="#">Privacy policy</a>
+                      <a href="#">Terms & condition</a>
+                    </span>
+                  </div>
+                </div>
+              </footer>  
     </body>
 </html>
