@@ -9,9 +9,9 @@
 body{
     background: linear-gradient(to bottom, #80ac82, #ffde59);
     animation: backgroundMove 10s infinite alternate;
+    width: 100%;
 }
 
-/* Animation pour le fond */
 @keyframes backgroundMove {
 0% { background-position: top left; }
 100% { background-position: bottom right; }
@@ -21,7 +21,6 @@ html{
   scroll-behavior: smooth;
 }
 
-/* Titre principal */
 h2 {
     text-align: center;
     margin-top: 150px;
@@ -30,15 +29,14 @@ h2 {
     animation: fadeSlide 4s ease-in;
 }
 
-/* Animation : Fondu + Glissement */
 @keyframes fadeSlide {
     0% {
         opacity: 0;
-        transform: translateY(-20px); /* Glissement vers le haut */
+        transform: translateY(-20px); 
     }
     50% {
         opacity: 1;
-        transform: translateY(0); /* Texte revient à sa position */
+        transform: translateY(0); 
     }
 
 }
@@ -61,7 +59,7 @@ figure {
 
 figure:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 12px #00000033;
 }
 
 figure img {
@@ -99,3 +97,48 @@ footer a{
   color: #fff;
   text-decoration: none;
 }
+/* Pour les tablettes (max-width 768px) */
+@media (max-width: 768px) {
+    h2 {
+      font-size: 1.5rem; 
+      margin-top: 100px;
+    }
+  
+    figure {
+      width: 80%; 
+      margin: 15px auto;
+    }
+  
+    footer {
+      padding: 30px;
+      font-size: 14px; 
+    }
+  
+    figure button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Pour les petits écrans (mobiles, max-width 480px) */
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.2rem; 
+      margin-top: 60px; 
+    }
+  
+    figure {
+      width: 90%; 
+      margin: 10px auto; 
+    }
+  
+    footer {
+      padding: 20px;
+      font-size: 12px; 
+    }
+  
+    figure button {
+      font-size: 12px;
+      padding: 6px 12px; 
+    }
+  }

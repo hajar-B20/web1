@@ -1,6 +1,3 @@
-
-
-/* Style général */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap');
 
 *{
@@ -11,7 +8,6 @@
 html{
   scroll-behavior: smooth;
 }
-/* Style de base pour la barre de navigation */
 .menu {
   top: 0;
   left: 0;
@@ -23,7 +19,7 @@ html{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 6px 10px; /* Espacement ajusté pour des écrans plus petits */
+  padding: 6px 10px; 
   z-index: 1300;
 }
 
@@ -67,63 +63,8 @@ html{
   padding: 0px 15px;          
 }
 
-/* Responsivité pour les petits écrans (tablettes et mobiles) */
-@media (max-width: 1200px) {
-  .menu {
-    padding: 20px 20px;
-  }
-  
-  .menu .logo a {
-    font-size: 30px; /* Réduit la taille du logo */
-  }
-
-  .menu ul {
-    font-size: 14px; /* Taille des éléments du menu réduite */
-  }
-
-  .menu ul li {
-    margin-left: 5px; /* Réduit l'espace entre les éléments du menu */
-  }
-}
-
-/* Pour les très petits écrans (mobiles) */
-@media (max-width: 768px) {
-  .menu {
-    padding: 15px 20px; /* Moins de padding pour les petits écrans */
-    flex-direction: column; /* Change l'orientation du menu en colonne */
-    align-items: center; /* Centre le contenu */
-    height: auto; /* Hauteur automatique */
-  }
-
-  .menu .logo a {
-    font-size: 28px; /* Réduit encore la taille du logo */
-    margin-left: 0; /* Évite un décalage inutile */
-  }
-
-  .menu ul {
-    flex-direction: column; /* Met les liens du menu en colonne */
-    align-items: center; /* Centre les liens */
-    width: 100%; /* Occupe toute la largeur disponible */
-    padding-top: 10px;
-  }
-
-  .menu ul li {
-    margin: 10px 0; /* Marge verticale entre les éléments du menu */
-  }
-
-  .menu ul a {
-    font-size: 18px; /* Augmente la taille des liens pour une meilleure lisibilité */
-    padding: 10px 20px; /* Plus de padding pour faciliter le clic */
-  }
-
-  .menu ul a:hover {
-    padding: 10px 25px; /* Augmente le padding lors du survol */
-  }
-}
-
-/* Sections */
 .section {
-  height: 100vh; /* Prend toute la hauteur de l'écran */
+  height: 100vh; 
   width: 100%;
   display: flex;
   justify-content: center;
@@ -157,7 +98,6 @@ html{
   animation: wave 1.5s infinite ease-in-out;
 }
 
-/* Animation */
 @keyframes fadeInZoom {
   0% {
     opacity: 0;
@@ -189,11 +129,11 @@ html{
   font-size: 4rem;
   color: #333;
   overflow: hidden;
-  border-right: 0.15em solid #ffde59; /* Simule un curseur */
+  border-right: 0.15em solid #ffde59;
   white-space: nowrap;
   animation: typing 8s steps(40, end), blink 0.8s step-end infinite alternate;
 }
-/* Animation pour l'effet de typing */
+
 @keyframes typing {
 from {
   width: 0;
@@ -202,7 +142,7 @@ to {
   width: 100%;
 }
 }
-/* Animation pour le curseur qui clignote */
+
 @keyframes blink {
 from {
   border-color: transparent;
@@ -221,4 +161,56 @@ to {
 }
 .about li{
   margin-left: 40px;
+}
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 600px) {
+  .quote {
+    font-size: 1.8rem; 
+    max-width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .author {
+    font-size: 1rem; 
+  }
+
+  .welcome {
+    font-size: 2.5rem; 
+  }
+}
+/* Pour les très petits écrans (mobiles) */
+@media (max-width: 768px) {
+  .menu {
+    padding: 0px 10px; 
+    flex-direction: column; 
+    align-items: center; 
+    height: auto;
+  }
+
+  .menu .logo a {
+    font-size: 28px; 
+    margin-left: 0; 
+  
+  .menu ul {
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+    padding-top: 10px;
+  }
+
+  .menu ul li {
+    margin: 10px 0; 
+
+  .menu ul a {
+    font-size: 18px; 
+    padding: 10px 20px; 
+  }
+
+  .menu ul a:hover {
+    padding: 10px 25px; 
+  }
+}
+  }
 }

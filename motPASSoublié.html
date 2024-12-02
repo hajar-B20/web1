@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mot de passe oublié</title>
-    <link rel="stylesheet" href="stloublie.css">
     <link rel="stylesheet" href="stlindex.css">
+    <link rel="stylesheet" href="stloublie.css">
+    
 </head>
 <body>
     <nav>
@@ -37,27 +38,29 @@
         <div class="oublie-section">
             <div class="form-box oublie">
 
-                <form >
+                <form id="passwordResetForm" onsubmit="sendEmail(event)">
                     <h2>Récupérer votre compte</h2>
                     <p>On va vous envoyer un lien dont vous aller changer votre mot de passe. </p>
                     <div class="input-box">
-                        <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" required>
-                        <label >Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="email" >Email</label>
                     </div>
                     
-                    <button class="btn"><b>Envoyer</b></button>
+                    <button  type="submit" class="btn"><b>Envoyer</b></button>
                 </form>
+                <p id="message" class="message" ></p>
+
             </div>
         </div>
 
         </div>
+    </div>  
     </center>
+
+    <script src="oublie.js"></script>
+
     <footer>
         <p>Copyright © 2024 <a href="index.html">EduFabor.</a></p>
     </footer>
-
-
-    
     </body>
 </html>

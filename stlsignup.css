@@ -199,3 +199,92 @@ html{
     opacity: 1;
     text-decoration: underline;
 } 
+
+@media (max-width: 1200px) {
+    .container {
+        width: 85%; 
+    }
+
+    .item {
+        padding: 40px;
+    }
+
+    .text-item h2 {
+        font-size: 32px;
+    }
+
+    .text-item p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+
+    .item {
+        padding: 20px;
+    }
+
+    .text-item h2 {
+        font-size: 28px;
+    }
+
+    .text-item p {
+        font-size: 14px;
+    }
+
+    .signup-section .form-box {
+        margin-left: 50px;
+    }
+
+    .form-box .input-box {
+        width: 280px;
+    }
+
+    .btn {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .footer {
+        font-size: 14px;
+        margin-top: 14rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .item {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .text-item h2 {
+        font-size: 24px;
+    }
+
+    .text-item p {
+        font-size: 12px;
+    }
+
+    .form-box .input-box {
+        width: 260px;
+    }
+
+    .btn {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .footer {
+        font-size: 12px;
+        margin-top: 5rem;
+    }
+}
