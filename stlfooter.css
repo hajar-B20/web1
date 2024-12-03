@@ -30,12 +30,13 @@ footer .content .top {
 
 .logo-container {
   display: flex;
-  align-items: center; /* Centre verticalement */
+  align-items: center; 
 }
 
 .logo {
-  height: 50px; /* Ajustez la taille du logo selon vos besoins */
-  margin-right: 8px; /* Espace entre le logo et le texte */ 
+  height: 45px; 
+  margin-right: 8px;
+   
 }
 .content .top .logo-details {
   color: #fff;

@@ -173,7 +173,7 @@ footer a{
 
 .message {
     position: fixed;
-    bottom: -5px; 
+    bottom: -2px; 
     left: 50%; 
     transform: translateX(-15%); 
     background-color: #f0f8ff; 
